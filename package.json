@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hk01-digital/auth01-js": "^0.2.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "random-string": "^0.2.0",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },

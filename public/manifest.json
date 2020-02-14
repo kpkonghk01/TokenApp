@@ -1,25 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "short_name": "Token App",
+  "name": "Token App",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "content_security_policy": "script-src 'self' 'sha256-nlfM3FCF3sMGgThcIZVFB5/0ruzLzECbb9XZlzWoMGA='; object-src 'self'",
+  "permissions": [
+    "tabs", "storage"
+  ],
+  "version": "0.1.0",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Token App"
+  }
 }

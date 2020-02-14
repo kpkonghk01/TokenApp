@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# An Extension for Lazy Developers who develop media-api-gateway
 
-## Available Scripts
+Tired to copy access token from console for testing API in Postman
 
-In the project directory, you can run:
+I can't remember the function for getting the token
 
-### `yarn start`
+And annoyed for removing the fucking `"` at the end of the token copied
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 0. Clone this
 
-### `yarn test`
+Variables in `.env` can be found in the `media-cms` repo
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+yarn
+yarn build
+```
 
-### `yarn build`
+If edited `.env`, then run the build script above to update the build and reload the extension
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Open extension Menu
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![Open Extension Menu](./files/01.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Load the Extension
 
-### `yarn eject`
+![Open Extension Menu](./files/02.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Enable Developer mode (Top Right Corner)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click `Load the Unpacked Extension` (Top Left Corner)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Load `./build` and see `Token App` with 01 logo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 3. Open the Popup by Clicking Extension Icon
 
-## Learn More
+![Open Extension Menu](./files/03.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`Login` will lead you to login `REACT_APP_AUTH01_CALLBACK`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+the token will be updated automatically
 
-### Code Splitting
+then use the `Copy` button to copy the access token
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### 4. Happy Valentine's Day
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+:cry:

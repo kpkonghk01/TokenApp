@@ -1,5 +1,17 @@
+/* html,
+body {
+  min-width: 500px;
+}
+.page {
+  padding: 20px;
+} */
+
+
+
 .App {
   text-align: center;
+  width: 400px;
+  height: 300px;
 }
 
 .App-logo {
@@ -35,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#logo {
+  width: 170px;
+  height: 170px;
 }
